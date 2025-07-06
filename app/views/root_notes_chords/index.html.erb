@@ -1,9 +1,11 @@
-<h1>RootNotesChords#index</h1>
-<p>Find me in app/views/root_notes_chords/index.html.erb</p>
+<div class="container">
+  <h1>RootNotesChords#index</h1>
+  <p>Find me in app/views/root_notes_chords/index.html.erb</p>
 
-<% @chords.each do |chord| %>
-  <p>
-    <%= chord.chord_name_with_flat %>
-    <%= link_to chord.chord_name_with_flat, root_note_root_notes_chord_path(chord.root_note.note_name_with_flat, chord.chord_name_with_flat) %>
-  </p>
-<% end %>
+  <% @chords.each do |chord| %>
+    <p>
+      <%= chord.chord_name_with_flat %>
+      <%= link_to chord.chord_name_with_flat, root_note_root_notes_chord_path(chord.root_note.note_name_with_flat, chord.chord_name_with_flat) %>
+    </p>
+  <% end %>
+</div>

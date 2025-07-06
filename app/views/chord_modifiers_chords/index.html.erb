@@ -1,9 +1,11 @@
-<h1>ChordModifiersChords#index</h1>
-<p>Find me in app/views/chord_modifiers_chords/index.html.erb</p>
+<div class="container">
+  <h1>ChordModifiersChords#index</h1>
+  <p>Find me in app/views/chord_modifiers_chords/index.html.erb</p>
 
-<% @chords.each do |chord| %>
-  <p>
-    <%= chord.chord_name_with_flat %>
-    <%= link_to chord.chord_name_with_flat, chord_modifier_chord_modifiers_chord_path(chord.chord_modifier_name, chord.chord_name_with_flat) %>
-  </p>
-<% end %>
+  <% @chords.each do |chord| %>
+    <p>
+      <%= chord.chord_name_with_flat %>
+      <%= link_to chord.chord_name_with_flat, chord_modifier_chord_modifiers_chord_path(chord.chord_modifier_name, chord.chord_name_with_flat) %>
+    </p>
+  <% end %>
+</div>

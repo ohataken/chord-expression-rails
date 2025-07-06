@@ -1,9 +1,11 @@
-<h1>Notes#index</h1>
-<p>Find me in app/views/notes/index.html.erb</p>
+<div class="container">
+  <h1>Notes#index</h1>
+  <p>Find me in app/views/notes/index.html.erb</p>
 
-<% @notes.each do |note| %>
-  <p>
-    <%= note.note_name_with_flat %>
-    <%= link_to note.note_name_with_flat, note_path(note.note_name_with_flat) %>
-  </p>
-<% end %>
+  <% @notes.each do |note| %>
+    <p>
+      <%= note.note_name_with_flat %>
+      <%= link_to note.note_name_with_flat, note_path(note.note_name_with_flat) %>
+    </p>
+  <% end %>
+</div>
