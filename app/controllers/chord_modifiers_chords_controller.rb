@@ -1,5 +1,6 @@
 class ChordModifiersChordsController < ApplicationController
   def index
+    @chord = chord_parser.parse
     @chords = root_notes.map do |root|
       ChordExpression::ChordParser.new(root + params[:chord_modifier_name]).parse
     end

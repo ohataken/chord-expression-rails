@@ -1,4 +1,14 @@
 <div class="container">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><%= link_to "Home", '/' %></li>
+      <li><%= link_to "Root Notes", root_notes_path %></li>
+      <li><%= link_to @chord.root_note.note_name_with_flat, root_note_root_notes_chords_path(@chord.root_note.note_name_with_flat) %></li>
+      <li class="is-active"><%= link_to @chord.chord_name_with_flat, root_note_root_notes_chord_path(@chord.root_note.note_name_with_flat, @chord.chord_name_with_flat) %></li>
+    </ul>
+  </nav>
+</div>
+<div class="container">
   <p>
     <h1><%= @chord.chord_name_with_flat %></h1>
   </p>

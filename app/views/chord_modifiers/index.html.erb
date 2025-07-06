@@ -1,4 +1,12 @@
 <div class="container">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><%= link_to "Home", '/' %></li>
+      <li class="is-active"><%= link_to "Chord Modifiers", chord_modifiers_path %></li>
+    </ul>
+  </nav>
+</div>
+<div class="container">
   <p>
     <h2>mmaj7</h2>
     <%= link_to "mmaj7", chord_modifier_chord_modifiers_chords_path("mmaj7") %>

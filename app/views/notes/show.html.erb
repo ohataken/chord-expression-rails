@@ -1,4 +1,13 @@
 <div class="container">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><%= link_to "Home", '/' %></li>
+      <li><%= link_to "Notes", notes_path %></li>
+      <li class="is-active"><%= link_to @note.note_name_with_flat, note_path(@note.note_name_with_flat) %></li>
+    </ul>
+  </nav>
+</div>
+<div class="container">
   <p>
     <h1><%= @note.note_name_with_flat %></h1>
   </p>
