@@ -14,6 +14,10 @@
       <div class="media-content">
         <div class="content">
           <h1><%= link_to @chord.chord_name_with_flat, root_note_root_notes_chord_path(@chord.root_note.note_name_with_flat, @chord.chord_name_with_flat), class: "has-text-black" %></h1>
+          <div class="tags">
+            <%= link_to "#{@chord.root_note.note_name_with_flat}", root_note_root_notes_chords_path(@chord.root_note.note_name_with_flat), class: "tag" %>
+            <%= link_to "#{@chord.chord_modifier_name}", chord_modifier_chord_modifiers_chords_path(@chord.chord_modifier_name), class: "tag" %>
+          </div>
           <p>
             <span><%= @chord.root_note&.note_name_with_flat %></span>
             <span><%= @chord.third&.note_name_with_flat %></span>

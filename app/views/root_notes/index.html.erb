@@ -13,6 +13,9 @@
         <div class="media-content">
           <div class="content">
             <h1><%= link_to note.note_name_with_flat, root_note_root_notes_chords_path(note.note_name_with_flat), class: "has-text-black" %></h1>
+            <div class="tags">
+              <%= link_to "#{note.note_name_with_flat}", root_note_root_notes_chords_path(note.note_name_with_flat), class: "tag" %>
+            </div>
           </div>
         </div>
       </article>
