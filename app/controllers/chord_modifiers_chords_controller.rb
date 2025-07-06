@@ -7,7 +7,7 @@ class ChordModifiersChordsController < ApplicationController
   end
 
   def show
-    @chord = chord_parser.parse
+    @chord = ChordExpression::ChordParser.new(params[:name]).parse
   end
 
   private
