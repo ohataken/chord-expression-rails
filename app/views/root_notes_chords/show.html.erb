@@ -1,2 +1,27 @@
 <h1>RootNotesChords#show</h1>
 <p>Find me in app/views/root_notes_chords/show.html.erb</p>
+
+<p>
+  <h1><%= @chord.chord_name_with_flat %></h1>
+  <%= @chord.inspect %>
+</p>
+
+<p>
+  <h2><%= @chord.root_note.note_name_with_flat %></h2>
+  <%= @chord.root_note.inspect %>
+</p>
+
+<p>
+  <h2><%= @chord.third.note_name_with_flat %></h2>
+  <%= @chord.third.inspect %>
+</p>
+
+<p>
+  <h2><%= @chord.fifth.note_name_with_flat %></h2>
+  <%= @chord.fifth.inspect %>
+</p>
+
+<p>
+  <h2><%= @chord.seventh&.note_name_with_flat %></h2>
+  <%= @chord.seventh&.inspect %>
+</p>
