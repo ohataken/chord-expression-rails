@@ -6,11 +6,16 @@
     </ul>
   </nav>
 </div>
-<div class="container">
-  <% @notes.each do |note| %>
-    <p>
-      <%= note.note_name_with_flat %>
-      <%= link_to note.note_name_with_flat, note_path(note.note_name_with_flat) %>
-    </p>
-  <% end %>
+<div class="section">
+  <div class="container">
+    <% @notes.each do |note| %>
+      <article class="media">
+        <div class="media-content">
+          <div class="content">
+            <h1><%= link_to note.note_name_with_flat, note_path(note.note_name_with_flat), class: "has-text-black" %></h1>
+          </div>
+        </div>
+      </article>
+    <% end %>
+  </div>
 </div>
