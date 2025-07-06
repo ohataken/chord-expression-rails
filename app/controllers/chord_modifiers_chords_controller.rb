@@ -6,11 +6,16 @@ class ChordModifiersChordsController < ApplicationController
   end
 
   def show
+    @chord = chord_parser.parse
   end
 
   private
 
   def root_notes
     %W[A Asharp B C Csharp D Dsharp E F Fsharp G Gsharp]
+  end
+
+  def chord_parser
+    ChordExpression::ChordParser.new(params[:name])
   end
 end
