@@ -1,2 +1,9 @@
 <h1>RootNotes#index</h1>
 <p>Find me in app/views/root_notes/index.html.erb</p>
+
+<% @notes.each do |note| %>
+  <p>
+    <%= note.note_name_with_flat %>
+    <%= link_to note.note_name_with_flat, root_note_root_notes_chords_path(note.note_name_with_flat) %>
+  </p>
+<% end %>
