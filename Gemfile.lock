@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/ohataken/chord-expression.git
+  revision: d9dd2a4808cc78e3376e667a6ae67dfe14105a0b
+  specs:
+    chord_expression (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -338,6 +344,7 @@ DEPENDENCIES
   bootsnap
   brakeman
   capybara
+  chord_expression!
   debug
   importmap-rails
   jbuilder
