@@ -16,6 +16,6 @@ class RootNotesChordsController < ApplicationController
   end
 
   def chord_parser
-    ChordExpression::ChordParser.new(params[:name])
+    ChordExpression::ChordParser.new(params[:root_note_name])
   end
 end
