@@ -6,5 +6,12 @@ class NotesController < ApplicationController
   end
 
   def show
+    @note = note_parser.parse
+  end
+
+  private
+
+  def note_parser
+    ChordExpression::NoteParser.new(params[:name])
   end
 end
