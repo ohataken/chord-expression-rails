@@ -16,6 +16,6 @@ class ChordModifiersChordsController < ApplicationController
   end
 
   def chord_parser
-    ChordExpression::ChordParser.new(params[:name])
+    ChordExpression::ChordParser.new("A#{params[:chord_modifier_name]}")
   end
 end
