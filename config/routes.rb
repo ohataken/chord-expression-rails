@@ -17,6 +17,10 @@ Rails.application.routes.draw do
     namespace :keyboards do
       resources :chords, only: [ :show ], param: :name
     end
+
+    namespace :finger_boards do
+      resources :chords, only: [ :show ], param: :name
+    end
   end
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
