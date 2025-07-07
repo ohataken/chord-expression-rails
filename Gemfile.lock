@@ -315,6 +315,7 @@ GEM
     unicode-emoji (4.0.4)
     uri (1.0.3)
     useragent (0.16.11)
+    victor (0.5.0)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -358,6 +359,7 @@ DEPENDENCIES
   thruster
   turbo-rails
   tzinfo-data
+  victor
   web-console
 
 BUNDLED WITH
