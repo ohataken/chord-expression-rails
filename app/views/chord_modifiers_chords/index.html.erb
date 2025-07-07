@@ -1,12 +1,3 @@
-<div class="container">
-  <nav class="breadcrumb" aria-label="breadcrumbs">
-    <ul>
-      <li><%= link_to "Home", '/' %></li>
-      <li><%= link_to "Chord Modifiers", chord_modifiers_path %></li>
-      <li class="is-active"><%= link_to @chord.chord_modifier_name, chord_modifier_chord_modifiers_chords_path(@chord.chord_modifier_name) %></li>
-    </ul>
-  </nav>
-</div>
 <div class="section">
   <div class="container">
     <% @chords.each do |chord| %>
