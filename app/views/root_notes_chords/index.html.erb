@@ -15,6 +15,9 @@
               <span><%= chord.fifth&.note_name_with_flat %></span>
               <span><%= chord.seventh&.note_name_with_flat %></span>
             </p>
+            <p>
+              <%= image_tag graphics_keyboards_chord_path(chord.chord_name_with_flat, format: :svg), class: "image" %>
+            </p>
           </div>
         </div>
       </article>
