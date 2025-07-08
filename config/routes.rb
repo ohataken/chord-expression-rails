@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   resources :chord_modifiers, only: [ :index ], param: :name do
-    resources :chord_modifiers_chords, only: [ :index, :show ], path: "chords", param: :name
+    resources :chord_modifiers_chords, only: [ :index ], path: "chords", param: :name
   end
 
   namespace :graphics do
