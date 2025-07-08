@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resources :root_notes_chords, only: [ :index, :show ], path: "chords", param: :name
   end
 
-  resources :chord_modifiers, only: [ :index, :show ], param: :name do
+  resources :chord_modifiers, only: [ :index ], param: :name do
     resources :chord_modifiers_chords, only: [ :index, :show ], path: "chords", param: :name
   end
 
