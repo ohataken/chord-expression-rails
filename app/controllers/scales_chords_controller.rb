@@ -1,12 +1,12 @@
 class ScalesChordsController < ApplicationController
   def index
-    @root_note = note_parser.parse
-    @scale = ChordExpression::Scale.new(@root_note)
+    @scale = scale_parser.parse
+    @root_note = @scale.i_root_note
   end
 
   private
 
-  def note_parser
-    ChordExpression::NoteParser.new(params[:scale_name])
+  def scale_parser
+    ChordExpression::ScaleParser.new(params[:scale_name])
   end
 end
