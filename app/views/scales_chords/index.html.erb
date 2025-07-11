@@ -1,2 +1,144 @@
-<h1>ScalesChords#index</h1>
-<p>Find me in app/views/scales_chords/index.html.erb</p>
+<div class="section">
+  <div class="container">
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <h1><%= link_to @scale.i_seventh_chord.chord_name_with_sharp, chord_path(@scale.i_seventh_chord.chord_name_with_sharp), class: "has-text-black" %></h1>
+          <div class="tags">
+            <%= link_to "#{@scale.i_seventh_chord.root_note.note_name_with_flat}", root_note_root_notes_chords_path(@scale.i_seventh_chord.root_note.note_name_with_flat), class: "tag" %>
+            <%= link_to "#{@scale.i_seventh_chord.chord_modifier_name}", chord_modifier_chord_modifiers_chords_path(@scale.i_seventh_chord.chord_modifier_name), class: "tag" %>
+          </div>
+          <p>
+            <span><%= @scale.i_seventh_chord.root_note&.note_name_with_flat %></span>
+            <span><%= @scale.i_seventh_chord.third&.note_name_with_flat %></span>
+            <span><%= @scale.i_seventh_chord.fifth&.note_name_with_flat %></span>
+            <span><%= @scale.i_seventh_chord.seventh&.note_name_with_flat %></span>
+          </p>
+          <p>
+            <%= image_tag graphics_keyboards_chord_path(@scale.i_seventh_chord.chord_name_with_sharp, format: :svg), class: "image" %>
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <h1><%= link_to @scale.ii_seventh_chord.chord_name_with_sharp, chord_path(@scale.ii_seventh_chord.chord_name_with_sharp), class: "has-text-black" %></h1>
+        </div>
+        <div class="tags">
+          <%= link_to "#{@scale.ii_seventh_chord.root_note.note_name_with_flat}", root_note_root_notes_chords_path(@scale.ii_seventh_chord.root_note.note_name_with_flat), class: "tag" %>
+          <%= link_to "#{@scale.ii_seventh_chord.chord_modifier_name}", chord_modifier_chord_modifiers_chords_path(@scale.ii_seventh_chord.chord_modifier_name), class: "tag" %>
+        </div>
+        <p>
+          <span><%= @scale.ii_seventh_chord.root_note&.note_name_with_flat %></span>
+          <span><%= @scale.ii_seventh_chord.third&.note_name_with_flat %></span>
+          <span><%= @scale.ii_seventh_chord.fifth&.note_name_with_flat %></span>
+          <span><%= @scale.ii_seventh_chord.seventh&.note_name_with_flat %></span>
+        </p>
+        <p>
+          <%= image_tag graphics_keyboards_chord_path(@scale.ii_seventh_chord.chord_name_with_sharp, format: :svg), class: "image" %>
+        </p>
+      </div>
+    </article>
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <h1><%= link_to @scale.iii_seventh_chord.chord_name_with_sharp, chord_path(@scale.iii_seventh_chord.chord_name_with_sharp), class: "has-text-black" %></h1>
+        </div>
+        <div class="tags">
+          <%= link_to "#{@scale.iii_seventh_chord.root_note.note_name_with_flat}", root_note_root_notes_chords_path(@scale.iii_seventh_chord.root_note.note_name_with_flat), class: "tag" %>
+          <%= link_to "#{@scale.iii_seventh_chord.chord_modifier_name}", chord_modifier_chord_modifiers_chords_path(@scale.iii_seventh_chord.chord_modifier_name), class: "tag" %>
+        </div>
+        <p>
+          <span><%= @scale.iii_seventh_chord.root_note&.note_name_with_flat %></span>
+          <span><%= @scale.iii_seventh_chord.third&.note_name_with_flat %></span>
+          <span><%= @scale.iii_seventh_chord.fifth&.note_name_with_flat %></span>
+          <span><%= @scale.iii_seventh_chord.seventh&.note_name_with_flat %></span>
+        </p>
+        <p>
+          <%= image_tag graphics_keyboards_chord_path(@scale.i_seventh_chord.chord_name_with_sharp, format: :svg), class: "image" %>
+        </p>
+      </div>
+    </article>
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <h1><%= link_to @scale.iv_seventh_chord.chord_name_with_sharp, chord_path(@scale.iv_seventh_chord.chord_name_with_sharp), class: "has-text-black" %></h1>
+        </div>
+        <div class="tags">
+          <%= link_to "#{@scale.iv_seventh_chord.root_note.note_name_with_flat}", root_note_root_notes_chords_path(@scale.iv_seventh_chord.root_note.note_name_with_flat), class: "tag" %>
+          <%= link_to "#{@scale.iv_seventh_chord.chord_modifier_name}", chord_modifier_chord_modifiers_chords_path(@scale.iv_seventh_chord.chord_modifier_name), class: "tag" %>
+        </div>
+        <p>
+          <span><%= @scale.iv_seventh_chord.root_note&.note_name_with_flat %></span>
+          <span><%= @scale.iv_seventh_chord.third&.note_name_with_flat %></span>
+          <span><%= @scale.iv_seventh_chord.fifth&.note_name_with_flat %></span>
+          <span><%= @scale.iv_seventh_chord.seventh&.note_name_with_flat %></span>
+        </p>
+        <p>
+          <%= image_tag graphics_keyboards_chord_path(@scale.iv_seventh_chord.chord_name_with_sharp, format: :svg), class: "image" %>
+        </p>
+      </div>
+    </article>
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <h1><%= link_to @scale.v_seventh_chord.chord_name_with_sharp, chord_path(@scale.v_seventh_chord.chord_name_with_sharp), class: "has-text-black" %></h1>
+        </div>
+        <div class="tags">
+          <%= link_to "#{@scale.v_seventh_chord.root_note.note_name_with_flat}", root_note_root_notes_chords_path(@scale.v_seventh_chord.root_note.note_name_with_flat), class: "tag" %>
+          <%= link_to "#{@scale.v_seventh_chord.chord_modifier_name}", chord_modifier_chord_modifiers_chords_path(@scale.v_seventh_chord.chord_modifier_name), class: "tag" %>
+        </div>
+        <p>
+          <span><%= @scale.v_seventh_chord.root_note&.note_name_with_flat %></span>
+          <span><%= @scale.v_seventh_chord.third&.note_name_with_flat %></span>
+          <span><%= @scale.v_seventh_chord.fifth&.note_name_with_flat %></span>
+          <span><%= @scale.v_seventh_chord.seventh&.note_name_with_flat %></span>
+        </p>
+        <p>
+          <%= image_tag graphics_keyboards_chord_path(@scale.v_seventh_chord.chord_name_with_sharp, format: :svg), class: "image" %>
+        </p>
+      </div>
+    </article>
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <h1><%= link_to @scale.vi_seventh_chord.chord_name_with_sharp, chord_path(@scale.vi_seventh_chord.chord_name_with_sharp), class: "has-text-black" %></h1>
+        </div>
+        <div class="tags">
+          <%= link_to "#{@scale.vi_seventh_chord.root_note.note_name_with_flat}", root_note_root_notes_chords_path(@scale.vi_seventh_chord.root_note.note_name_with_flat), class: "tag" %>
+          <%= link_to "#{@scale.vi_seventh_chord.chord_modifier_name}", chord_modifier_chord_modifiers_chords_path(@scale.vi_seventh_chord.chord_modifier_name), class: "tag" %>
+        </div>
+        <p>
+          <span><%= @scale.vi_seventh_chord.root_note&.note_name_with_flat %></span>
+          <span><%= @scale.vi_seventh_chord.third&.note_name_with_flat %></span>
+          <span><%= @scale.vi_seventh_chord.fifth&.note_name_with_flat %></span>
+          <span><%= @scale.vi_seventh_chord.seventh&.note_name_with_flat %></span>
+        </p>
+        <p>
+          <%= image_tag graphics_keyboards_chord_path(@scale.vi_seventh_chord.chord_name_with_sharp, format: :svg), class: "image" %>
+        </p>
+      </div>
+    </article>
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <h1><%= link_to @scale.vii_seventh_chord.chord_name_with_sharp, chord_path(@scale.vii_seventh_chord.chord_name_with_sharp), class: "has-text-black" %></h1>
+        </div>
+        <div class="tags">
+          <%= link_to "#{@scale.vii_seventh_chord.root_note.note_name_with_flat}", root_note_root_notes_chords_path(@scale.vii_seventh_chord.root_note.note_name_with_flat), class: "tag" %>
+          <%= link_to "#{@scale.vii_seventh_chord.chord_modifier_name}", chord_modifier_chord_modifiers_chords_path(@scale.vii_seventh_chord.chord_modifier_name), class: "tag" %>
+        </div>
+        <p>
+          <span><%= @scale.vii_seventh_chord.root_note&.note_name_with_flat %></span>
+          <span><%= @scale.vii_seventh_chord.third&.note_name_with_flat %></span>
+          <span><%= @scale.vii_seventh_chord.fifth&.note_name_with_flat %></span>
+          <span><%= @scale.vii_seventh_chord.seventh&.note_name_with_flat %></span>
+        </p>
+        <p>
+          <%= image_tag graphics_keyboards_chord_path(@scale.vii_seventh_chord.chord_name_with_sharp, format: :svg), class: "image" %>
+        </p>
+      </div>
+    </article>
+  </div>
+</div>

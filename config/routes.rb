@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     resources :chord_modifiers_chords, only: [ :index ], path: "chords", param: :name
   end
 
+  resources :scales, only: [], param: :name do
+    resources :scales_chords, only: [ :index ], path: "chords", param: :name
+  end
+
   namespace :graphics do
     namespace :keyboards do
       resources :chords, only: [ :show ], param: :name
