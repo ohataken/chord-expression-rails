@@ -1,0 +1,2 @@
+module ScalesChordsHelper
+end
