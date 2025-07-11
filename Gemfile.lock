@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ohataken/chord-expression.git
-  revision: fefd8f4540fd6368120728dc8ddad53bcb651bff
+  revision: 89aed4e1a7d3ab7c9c2b207ab3352b98b58a3fe6
   specs:
     chord_expression (0.1.0)
 
