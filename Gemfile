@@ -61,5 +61,5 @@ group :test do
   # Rails::TestUnit::Runner on both 8.0 (ArgumentError in line_filtering.rb)
   # and 8.1 (LoadError on the test:system pseudo task). Unpin once Rails
   # supports minitest 6.
-  gem "minitest", "~> 5.25"
+  gem "minitest", "~> 6.0"
 end
